@@ -1,0 +1,6 @@
+file(GLOB LIB_FILES
+  RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}
+  CONFIGURE_DEPENDS
+  *.cpp)
+
+add_library(designpatterns STATIC ${LIB_FILES})
