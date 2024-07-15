@@ -5,7 +5,7 @@ namespace BSP::DesignPatterns::Builder {
 std::unique_ptr<Maze>
 MazeGame::createMaze(IMazeBuilder &builder) {
     builder.buildMaze();
-    return nullptr;
+    return builder.getMaze();
 }
 
 } // namespace BSP::DesignPatterns::Builder
