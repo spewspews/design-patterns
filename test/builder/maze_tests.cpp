@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include <maze.h>
+#include <builder/maze.h>
 
 namespace BSP::DesignPatterns {
 

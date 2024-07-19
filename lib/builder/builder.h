@@ -12,7 +12,6 @@ class IMazeBuilder {
     virtual void buildMaze() = 0;
     virtual void buildRoom(int room) = 0;
     virtual void buildDoor(int from, int to) = 0;
-    virtual std::unique_ptr<Maze> getMaze() = 0;
 };
 
 class StandardMazeBuilder : public IMazeBuilder {
@@ -21,7 +20,7 @@ class StandardMazeBuilder : public IMazeBuilder {
     void buildMaze() override;
     void buildRoom(int room) override;
     void buildDoor(int from, int to) override;
-    std::unique_ptr<Maze> getMaze() override;
+    std::unique_ptr<Maze> getMaze();
 
   private:
     std::unique_ptr<Maze> maze;

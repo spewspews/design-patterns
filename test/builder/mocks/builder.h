@@ -2,7 +2,7 @@
 
 #include <gmock/gmock.h>
 
-#include <builder.h>
+#include <builder/builder.h>
 
 namespace BSP::DesignPatterns::Builder {
 
@@ -11,7 +11,6 @@ class MockBuilder : public IMazeBuilder {
     MOCK_METHOD(void, buildMaze, (), (override));
     MOCK_METHOD(void, buildRoom, (int), (override));
     MOCK_METHOD(void, buildDoor, (int, int), (override));
-    MOCK_METHOD(std::unique_ptr<Maze>, getMaze, (), (override));
 };
 
 } // namespace BSP::DesignPatterns::Builder

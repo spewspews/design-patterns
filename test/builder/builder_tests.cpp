@@ -10,7 +10,7 @@ class BuilderTests : public testing::Test {
   protected:
     void SetUp() { builder = std::make_unique<StandardMazeBuilder>(); }
     void TearDown() {}
-    std::unique_ptr<IMazeBuilder> builder;
+    std::unique_ptr<StandardMazeBuilder> builder;
 };
 
 TEST_F(BuilderTests, FirstExample) { ASSERT_EQ(builder->getMaze(), nullptr); }
