@@ -2,7 +2,7 @@
 
 #include <memory>
 
-#include <maze.h>
+#include <builder/maze.h>
 
 namespace BSP::DesignPatterns::Builder {
 
